@@ -141,11 +141,48 @@ function wp_bakery_scripts() {
 	wp_enqueue_style( 'wp_bakery-style', get_stylesheet_uri(), array(), _S_VERSION );
 	wp_style_add_data( 'wp_bakery-style', 'rtl', 'replace' );
 
+  wp_enqueue_script('jquery');
+
 	wp_enqueue_script( 'wp_bakery-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
+
+  wp_enqueue_style('wp_bakery-fonts-Poppins', "https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900|Display+Playfair:200,300,400,700", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-icomoon', get_template_directory_uri() . "/assets/fonts/icomoon/style.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-bootstrap.min', get_template_directory_uri() . "/assets/css/bootstrap.min.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-magnific-popup', get_template_directory_uri() . "/assets/css/magnific-popup.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-jquery-ui', get_template_directory_uri() . "/assets/css/jquery-ui.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-owl.carousel.min', get_template_directory_uri() . "/assets/css/owl.carousel.min.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-owl.theme.default.min', get_template_directory_uri() . "/assets/css/owl.theme.default.min.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-bootstrap-datepicker.css', get_template_directory_uri() . "/assets/css/bootstrap-datepicker.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-font-flaticon', get_template_directory_uri() . "/assets/fonts/flaticon/font/flaticon.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-mediaelementplayer', "https://cdn.jsdelivr.net/npm/mediaelement@4.2.7/build/mediaelementplayer.min.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-aos.', get_template_directory_uri() . "/assets/css/aos.css", array(), _S_VERSION);
+
+  wp_enqueue_style('wp_bakery-css-general-style', get_template_directory_uri() . "/assets/css/style.css", array(), _S_VERSION);
+
+  wp_enqueue_script('jquery-ui');
+  wp_enqueue_script( 'wp_bakery-popper.min', get_template_directory_uri() . '/assets/js/popper.min.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-bootstrap.min', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-owl.carousel.min', get_template_directory_uri() . '/assets/js/owl.carousel.min.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-jquery.stellar.min', get_template_directory_uri() . '/assets/js/jquery.stellar.min.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-jquery.countdown', get_template_directory_uri() . '/assets/js/jquery.countdown.min.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-jquery.magnific-popup', get_template_directory_uri() . '/assets/js/jquery.magnific-popup.min.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-bootstrap-datepicker', get_template_directory_uri() . '/assets/js/bootstrap-datepicker.min.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-js-aos', get_template_directory_uri() . '/assets/js/aos.js', array(), _S_VERSION, true );
+  wp_enqueue_script( 'wp_bakery-js-main', get_template_directory_uri() . '/assets/js/main.js', array(), _S_VERSION, true );
 }
 add_action( 'wp_enqueue_scripts', 'wp_bakery_scripts' );
 
