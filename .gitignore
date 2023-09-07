@@ -21,4 +21,4 @@ xmlrpc.php
 
 /wp-content/themes/twentytwentythree
 
-# /wp-content/plugins/*
+/wp-content/plugins/*

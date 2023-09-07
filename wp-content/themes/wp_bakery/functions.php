@@ -175,5 +175,6 @@ function wp_bakery_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'wp_bakery_scripts' );
 
-//require get_template_directory() . '/inc/custom-header.php';
+// get options panel 
+require get_template_directory() . '/inc/options-panel.php';
 

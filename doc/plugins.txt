@@ -1,0 +1,11 @@
+redux framework
+плагин для добавления кастомных настроек на сайт
+
+- устанавливаем плагин redux framework
+- тяним файл сайт - wp-content - plugins - redux-framework - sample - sample-config.php
+- и закидываем его в тему в папку inc
+- переименовываем на options-panel.php
+- добавляем его в functions.php
+после этого добавляется вкладка с опциями в админ панеле wp
+
+======================================
