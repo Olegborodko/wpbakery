@@ -22,3 +22,10 @@ xmlrpc.php
 /wp-content/themes/twentytwentythree
 
 /wp-content/plugins/*
+!/wp-content/plugins/redux-framework/
+/wp-content/plugins/redux-framework/redux-core
+/wp-content/plugins/redux-framework/redux-templates
+/wp-content/plugins/redux-framework/ReduxCore
+/wp-content/plugins/redux-framework/sample/patterns
+/wp-content/plugins/redux-framework/sample/presets
+/wp-content/plugins/redux-framework/sample/extension

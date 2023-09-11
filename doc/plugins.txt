@@ -8,4 +8,11 @@ redux framework
 - добавляем его в functions.php
 после этого добавляется вкладка с опциями в админ панеле wp
 
+- дальше с админки с F12 находим нужное поле например opt-sortable,     в options-panel.php
+
+- остальное комментируем, оставляем только нужные нам опции, ну и меняем так как нам нужно
+
+- еще я поменял wp-content/plugins/redux-framework/sample/sections/basic-fields/sortable.php
+
 ======================================
+

@@ -287,24 +287,24 @@ Redux::set_args( $opt_name, $args );
 /*
  * ---> START HELP TABS
  */
-// $help_tabs = array(
-// 	array(
-// 		'id'      => 'redux-help-tab-1',
-// 		'title'   => esc_html__( 'Theme Information 1', 'your-textdomain-here' ),
-// 		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
-// 	),
-// 	array(
-// 		'id'      => 'redux-help-tab-2',
-// 		'title'   => esc_html__( 'Theme Information 2', 'your-textdomain-here' ),
-// 		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
-// 	),
-// );
-// Redux::set_help_tab( $opt_name, $help_tabs );
+$help_tabs = array(
+	array(
+		'id'      => 'redux-help-tab-1',
+		'title'   => esc_html__( 'Theme Information 1', 'your-textdomain-here' ),
+		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+	),
+	array(
+		'id'      => 'redux-help-tab-2',
+		'title'   => esc_html__( 'Theme Information 2', 'your-textdomain-here' ),
+		'content' => '<p>' . esc_html__( 'This is the tab content, HTML is allowed.', 'your-textdomain-here' ) . '</p>',
+	),
+);
+Redux::set_help_tab( $opt_name, $help_tabs );
 
 // Set the help sidebar.
-// $content = '<p>' . esc_html__( 'This is the sidebar content, HTML is allowed.', 'your-textdomain-here' ) . '</p>';
+$content = '<p>' . esc_html__( 'This is the sidebar content, HTML is allowed.', 'your-textdomain-here' ) . '</p>';
 
-// Redux::set_help_sidebar( $opt_name, $content );
+Redux::set_help_sidebar( $opt_name, $content );
 
 /*
  * <--- END HELP TABS
@@ -326,224 +326,224 @@ Redux::set_section(
 	)
 );
 
-// require_once Redux_Core::$dir . '../sample/sections/basic-fields/checkbox.php';
-// require_once Redux_Core::$dir . '../sample/sections/basic-fields/radio.php';
+require_once Redux_Core::$dir . '../sample/sections/basic-fields/checkbox.php';
+require_once Redux_Core::$dir . '../sample/sections/basic-fields/radio.php';
 require_once Redux_Core::$dir . '../sample/sections/basic-fields/sortable.php';
-// require_once Redux_Core::$dir . '../sample/sections/basic-fields/text.php';
-// require_once Redux_Core::$dir . '../sample/sections/basic-fields/multi-text.php';
-// require_once Redux_Core::$dir . '../sample/sections/basic-fields/password.php';
-// require_once Redux_Core::$dir . '../sample/sections/basic-fields/textarea.php';
+require_once Redux_Core::$dir . '../sample/sections/basic-fields/text.php';
+require_once Redux_Core::$dir . '../sample/sections/basic-fields/multi-text.php';
+require_once Redux_Core::$dir . '../sample/sections/basic-fields/password.php';
+require_once Redux_Core::$dir . '../sample/sections/basic-fields/textarea.php';
 
 // -> START Editors.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title'            => esc_html__( 'Editors', 'your-textdomain-here' ),
-// 		'id'               => 'editor',
-// 		'customizer_width' => '500px',
-// 		'icon'             => 'el el-edit',
-// 	)
-// );
+Redux::set_section(
+	$opt_name,
+	array(
+		'title'            => esc_html__( 'Editors', 'your-textdomain-here' ),
+		'id'               => 'editor',
+		'customizer_width' => '500px',
+		'icon'             => 'el el-edit',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/editors/wordpress-editor.php';
-// require_once Redux_Core::$dir . '../sample/sections/editors/ace-editor.php';
+require_once Redux_Core::$dir . '../sample/sections/editors/wordpress-editor.php';
+require_once Redux_Core::$dir . '../sample/sections/editors/ace-editor.php';
 
-// // -> START Color Selection.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Color Selection', 'your-textdomain-here' ),
-// 		'id'    => 'color',
-// 		'icon'  => 'el el-brush',
-// 	)
-// );
+// -> START Color Selection.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Color Selection', 'your-textdomain-here' ),
+		'id'    => 'color',
+		'icon'  => 'el el-brush',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/color-selection/color.php';
-// require_once Redux_Core::$dir . '../sample/sections/color-selection/color-gradient.php';
-// require_once Redux_Core::$dir . '../sample/sections/color-selection/color-rgba.php';
-// require_once Redux_Core::$dir . '../sample/sections/color-selection/link-color.php';
-// require_once Redux_Core::$dir . '../sample/sections/color-selection/palette.php';
-// require_once Redux_Core::$dir . '../sample/sections/color-selection/color-palette.php';
+require_once Redux_Core::$dir . '../sample/sections/color-selection/color.php';
+require_once Redux_Core::$dir . '../sample/sections/color-selection/color-gradient.php';
+require_once Redux_Core::$dir . '../sample/sections/color-selection/color-rgba.php';
+require_once Redux_Core::$dir . '../sample/sections/color-selection/link-color.php';
+require_once Redux_Core::$dir . '../sample/sections/color-selection/palette.php';
+require_once Redux_Core::$dir . '../sample/sections/color-selection/color-palette.php';
 
-// // -> START Design Fields.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Design Fields', 'your-textdomain-here' ),
-// 		'id'    => 'design',
-// 		'icon'  => 'el el-wrench',
-// 	)
-// );
+// -> START Design Fields.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Design Fields', 'your-textdomain-here' ),
+		'id'    => 'design',
+		'icon'  => 'el el-wrench',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/design-fields/background.php';
-// require_once Redux_Core::$dir . '../sample/sections/design-fields/box-shadow.php';
-// require_once Redux_Core::$dir . '../sample/sections/design-fields/border.php';
-// require_once Redux_Core::$dir . '../sample/sections/design-fields/dimensions.php';
-// require_once Redux_Core::$dir . '../sample/sections/design-fields/spacing.php';
+require_once Redux_Core::$dir . '../sample/sections/design-fields/background.php';
+require_once Redux_Core::$dir . '../sample/sections/design-fields/box-shadow.php';
+require_once Redux_Core::$dir . '../sample/sections/design-fields/border.php';
+require_once Redux_Core::$dir . '../sample/sections/design-fields/dimensions.php';
+require_once Redux_Core::$dir . '../sample/sections/design-fields/spacing.php';
 
-// // -> START Media Uploads.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Media Uploads', 'your-textdomain-here' ),
-// 		'id'    => 'media',
-// 		'icon'  => 'el el-picture',
-// 	)
-// );
+// -> START Media Uploads.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Media Uploads', 'your-textdomain-here' ),
+		'id'    => 'media',
+		'icon'  => 'el el-picture',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/media-uploads/gallery.php';
-// require_once Redux_Core::$dir . '../sample/sections/media-uploads/media.php';
-// require_once Redux_Core::$dir . '../sample/sections/media-uploads/multi-media.php';
-// require_once Redux_Core::$dir . '../sample/sections/media-uploads/slides.php';
+require_once Redux_Core::$dir . '../sample/sections/media-uploads/gallery.php';
+require_once Redux_Core::$dir . '../sample/sections/media-uploads/media.php';
+require_once Redux_Core::$dir . '../sample/sections/media-uploads/multi-media.php';
+require_once Redux_Core::$dir . '../sample/sections/media-uploads/slides.php';
 
-// // -> START Presentation Fields.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Presentation Fields', 'your-textdomain-here' ),
-// 		'id'    => 'presentation',
-// 		'icon'  => 'el el-screen',
-// 	)
-// );
+// -> START Presentation Fields.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Presentation Fields', 'your-textdomain-here' ),
+		'id'    => 'presentation',
+		'icon'  => 'el el-screen',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/presentation-fields/divide.php';
-// require_once Redux_Core::$dir . '../sample/sections/presentation-fields/info.php';
-// require_once Redux_Core::$dir . '../sample/sections/presentation-fields/section.php';
+require_once Redux_Core::$dir . '../sample/sections/presentation-fields/divide.php';
+require_once Redux_Core::$dir . '../sample/sections/presentation-fields/info.php';
+require_once Redux_Core::$dir . '../sample/sections/presentation-fields/section.php';
 
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'id'   => 'presentation-divide-sample',
-// 		'type' => 'divide',
-// 	)
-// );
+Redux::set_section(
+	$opt_name,
+	array(
+		'id'   => 'presentation-divide-sample',
+		'type' => 'divide',
+	)
+);
 
-// // -> START Switch & Button Set.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Switch / Button Set', 'your-textdomain-here' ),
-// 		'id'    => 'switch_buttonset',
-// 		'icon'  => 'el el-cogs',
-// 	)
-// );
+// -> START Switch & Button Set.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Switch / Button Set', 'your-textdomain-here' ),
+		'id'    => 'switch_buttonset',
+		'icon'  => 'el el-cogs',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/switch-button/button-set.php';
-// require_once Redux_Core::$dir . '../sample/sections/switch-button/switch.php';
+require_once Redux_Core::$dir . '../sample/sections/switch-button/button-set.php';
+require_once Redux_Core::$dir . '../sample/sections/switch-button/switch.php';
 
-// // -> START Select Fields.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Select Fields', 'your-textdomain-here' ),
-// 		'id'    => 'select',
-// 		'icon'  => 'el el-list-alt',
-// 	)
-// );
+// -> START Select Fields.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Select Fields', 'your-textdomain-here' ),
+		'id'    => 'select',
+		'icon'  => 'el el-list-alt',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/select-fields/select.php';
-// require_once Redux_Core::$dir . '../sample/sections/select-fields/image-select.php';
-// require_once Redux_Core::$dir . '../sample/sections/select-fields/select-image.php';
+require_once Redux_Core::$dir . '../sample/sections/select-fields/select.php';
+require_once Redux_Core::$dir . '../sample/sections/select-fields/image-select.php';
+require_once Redux_Core::$dir . '../sample/sections/select-fields/select-image.php';
 
-// // -> START Slider / Spinner.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Slider / Spinner', 'your-textdomain-here' ),
-// 		'id'    => 'slider_spinner',
-// 		'icon'  => 'el el-adjust-alt',
-// 	)
-// );
+// -> START Slider / Spinner.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Slider / Spinner', 'your-textdomain-here' ),
+		'id'    => 'slider_spinner',
+		'icon'  => 'el el-adjust-alt',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/slider-spinner/slider.php';
-// require_once Redux_Core::$dir . '../sample/sections/slider-spinner/spinner.php';
+require_once Redux_Core::$dir . '../sample/sections/slider-spinner/slider.php';
+require_once Redux_Core::$dir . '../sample/sections/slider-spinner/spinner.php';
 
-// // -> START Typography.
-// require_once Redux_Core::$dir . '../sample/sections/typography/typography.php';
+// -> START Typography.
+require_once Redux_Core::$dir . '../sample/sections/typography/typography.php';
 
-// // -> START Additional Types.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Additional Types', 'your-textdomain-here' ),
-// 		'id'    => 'additional',
-// 		'icon'  => 'el el-magic',
-// 	)
-// );
+// -> START Additional Types.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Additional Types', 'your-textdomain-here' ),
+		'id'    => 'additional',
+		'icon'  => 'el el-magic',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/additional-types/date.php';
-// require_once Redux_Core::$dir . '../sample/sections/additional-types/date-time-picker.php';
-// require_once Redux_Core::$dir . '../sample/sections/additional-types/sorter.php';
-// require_once Redux_Core::$dir . '../sample/sections/additional-types/raw.php';
+require_once Redux_Core::$dir . '../sample/sections/additional-types/date.php';
+require_once Redux_Core::$dir . '../sample/sections/additional-types/date-time-picker.php';
+require_once Redux_Core::$dir . '../sample/sections/additional-types/sorter.php';
+require_once Redux_Core::$dir . '../sample/sections/additional-types/raw.php';
 
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Advanced Features', 'your-textdomain-here' ),
-// 		'icon'  => 'el el-thumbs-up',
-// 	)
-// );
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Advanced Features', 'your-textdomain-here' ),
+		'icon'  => 'el el-thumbs-up',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/advanced-features/callback.php';
+require_once Redux_Core::$dir . '../sample/sections/advanced-features/callback.php';
 
-// // -> START Validation.
-// require_once Redux_Core::$dir . '../sample/sections/advanced-features/field-validation.php';
+// -> START Validation.
+require_once Redux_Core::$dir . '../sample/sections/advanced-features/field-validation.php';
 
-// // -> START Sanitizing.
-// require_once Redux_Core::$dir . '../sample/sections/advanced-features/field-sanitizing.php';
+// -> START Sanitizing.
+require_once Redux_Core::$dir . '../sample/sections/advanced-features/field-sanitizing.php';
 
-// // -> START Required.
-// require_once Redux_Core::$dir . '../sample/sections/advanced-features/field-required-linking.php';
+// -> START Required.
+require_once Redux_Core::$dir . '../sample/sections/advanced-features/field-required-linking.php';
 
-// require_once Redux_Core::$dir . '../sample/sections/advanced-features/wpml-integration.php';
+require_once Redux_Core::$dir . '../sample/sections/advanced-features/wpml-integration.php';
 
-// // -> START Disabling.
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Disabling', 'your-textdomain-here' ),
-// 		'icon'  => 'el el-lock',
-// 	)
-// );
+// -> START Disabling.
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Disabling', 'your-textdomain-here' ),
+		'icon'  => 'el el-lock',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/disabling/disable-field.php';
-// require_once Redux_Core::$dir . '../sample/sections/disabling/disable-section.php';
+require_once Redux_Core::$dir . '../sample/sections/disabling/disable-field.php';
+require_once Redux_Core::$dir . '../sample/sections/disabling/disable-section.php';
 
-// // -> START Pro Fields.
+// -> START Pro Fields.
 
-// Redux::set_section(
-// 	$opt_name,
-// 	array(
-// 		'title' => esc_html__( 'Redux Extensions', 'your-textdomain-here' ),
-// 		'id'    => 'redux-extensions',
-// 		'icon'  => 'el el-redux',
-// 		'class' => 'pro_highlight',
-// 		'desc'  => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-extensions/" target="_blank">https://devs.redux.io/core-extensions/</a>',
-// 	)
-// );
+Redux::set_section(
+	$opt_name,
+	array(
+		'title' => esc_html__( 'Redux Extensions', 'your-textdomain-here' ),
+		'id'    => 'redux-extensions',
+		'icon'  => 'el el-redux',
+		'class' => 'pro_highlight',
+		'desc'  => esc_html__( 'For full documentation on this field, visit: ', 'your-textdomain-here' ) . '<a href="https://devs.redux.io/core-extensions/" target="_blank">https://devs.redux.io/core-extensions/</a>',
+	)
+);
 
-// require_once Redux_Core::$dir . '../sample/sections/extensions/accordion.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/custom-fonts.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/google-maps.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/icon-select.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/js-button.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/repeater.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/search.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/shortcodes.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/social-profiles.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/widget-areas.php';
-// require_once Redux_Core::$dir . '../sample/sections/extensions/users.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/accordion.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/custom-fonts.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/google-maps.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/icon-select.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/js-button.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/repeater.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/search.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/shortcodes.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/social-profiles.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/widget-areas.php';
+require_once Redux_Core::$dir . '../sample/sections/extensions/users.php';
 
-// if ( class_exists( 'Redux_Pro' ) ) {
-// 	require_once Redux_Core::$dir . '../sample/sections/extensions/color-scheme.php';
-// 	require_once Redux_Core::$dir . '../sample/sections/extensions/taxonomy.php';
-// 	require_once Redux_Core::$dir . '../sample/sections/extensions/users.php';
-// }
+if ( class_exists( 'Redux_Pro' ) ) {
+	require_once Redux_Core::$dir . '../sample/sections/extensions/color-scheme.php';
+	require_once Redux_Core::$dir . '../sample/sections/extensions/taxonomy.php';
+	require_once Redux_Core::$dir . '../sample/sections/extensions/users.php';
+}
 
-// /**
-//  * Metaboxes
-//  */
-// require_once Redux_Core::$dir . '../sample/metaboxes.php';
+/**
+ * Metaboxes
+ */
+require_once Redux_Core::$dir . '../sample/metaboxes.php';
 
 /**
  * Raw README
