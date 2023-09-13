@@ -1,13 +1,5 @@
 <?php
-/**
- * The header for our theme
- *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package wp_bakery
- */
+global $redux_wpbakery;
 
 ?>
 <!doctype html>
@@ -93,18 +85,36 @@
           <div class="col-6 col-xl-2 text-right" data-aos="fade-down">
             <div class="d-none d-xl-inline-block">
               <ul class="site-menu js-clone-nav ml-auto list-unstyled d-flex text-right mb-0" data-class="social">
+
+                <?php
+                  if($redux_wpbakery['opt-sortable']){
+                    foreach($redux_wpbakery['opt-sortable'] as $key=>$value){
+
+                      $icon = '';
+                      if ($key == 'Facebook'){
+                        $icon = 'icon-facebook';
+                      }
+                      if ($key == 'Twitter'){
+                        $icon = 'icon-twitter';
+                      }
+                      if ($key == 'Instagram'){
+                        $icon = 'icon-instagram';
+                      }
+                      if ($key == 'Telegram'){
+                        $icon = 'icon-telegram';
+                      }
+                      if ($key == 'Youtube'){
+                        $icon = 'icon-youtube-play';
+                      }
+                      ?>
                 <li>
-                  <a href="#" class="pl-0 pr-3 text-black"><span class="icon-facebook"></span></a>
+                  <a href="<?=esc_url($value)?>" class="pl-0 pr-3 text-black"><span class="<?=$icon?>"></span></a>
                 </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-twitter"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-instagram"></span></a>
-                </li>
-                <li>
-                  <a href="#" class="pl-3 pr-3 text-black"><span class="icon-youtube-play"></span></a>
-                </li>
+                      <?php
+                    }
+                  }
+                ?>
+
               </ul>
             </div>
 

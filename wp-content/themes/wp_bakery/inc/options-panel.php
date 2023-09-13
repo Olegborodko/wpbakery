@@ -13,7 +13,7 @@ if ( ! class_exists( 'Redux' ) ) {
 }
 
 // This is your option name where all the Redux data is stored.
-$opt_name = 'redux_demo';  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN YOUR PROJECT!!!
+$opt_name = 'redux_wpbakery';  // YOU MUST CHANGE THIS.  DO NOT USE 'redux_demo' IN YOUR PROJECT!!!
 
 // Uncomment to disable demo mode.
 /* Redux::disable_demo(); */  // phpcs:ignore Squiz.PHP.CommentedOutCode

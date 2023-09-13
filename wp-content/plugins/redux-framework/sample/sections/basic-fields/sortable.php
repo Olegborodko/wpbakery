@@ -25,8 +25,10 @@ Redux::set_section(
 				'label'    => true,
 				'options'  => array(
 					'Telegram'   => '',
-					'Yutube'   => '',
+					'Youtube'   => '',
 					'Twitter' => '',
+          'Facebook' => '',
+          'Instagram' => '',
 				),
 			),
 			// array(
