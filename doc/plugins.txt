@@ -15,4 +15,9 @@ redux framework
 - еще я поменял wp-content/plugins/redux-framework/sample/sections/basic-fields/sortable.php
 
 ======================================
+Плагин для создания subscribe поля и кнопки
 
+Mailchimp
+https://wordpress.org/plugins/mailchimp-for-wp/
+
+======================================

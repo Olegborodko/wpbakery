@@ -178,3 +178,35 @@ add_action( 'wp_enqueue_scripts', 'wp_bakery_scripts' );
 // get options panel 
 require get_template_directory() . '/inc/options-panel.php';
 
+// add custom element and category wpbakery
+if (class_exists('WPBakeryShortCode')){
+  class WPBakeryShortCode_My_Widget1 extends WPBakeryShortCode {}
+}
+
+if (function_exists('vc_map')){
+  vc_map( array(
+    "name" => __( "My Widget1", "my_slug" ),
+    "base" => "my_widget1", // !!!
+    "class" => "",
+    "category" => __( "My Category", "my_slug"),
+    "description" => __("My description", "my_slug"),
+    'show_settings_on_create' => true,
+    'icon' => 'my_custom_class_for_icon',
+    // 'admin_enqueue_js' => array(get_template_directory_uri().'/vc_extend/bartag.js'),
+    // 'admin_enqueue_css' => array(get_template_directory_uri().'/vc_extend/bartag.css'),
+    "params" => array(
+      array(
+        "type" => "textfield",
+        "holder" => "div",
+        "class" => "",
+        "heading" => __( "Text", "my_slug" ),
+        "param_name" => "foo",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Description for foo param.", "my_slug" )
+      ),
+    )
+   ) );
+}
+
+
+

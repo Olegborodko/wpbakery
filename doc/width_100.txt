@@ -1,0 +1,12 @@
+что-бы задать container в wpBackery  - 
+задать в page.php врапер 
+<div class="container"></div>
+и потом колонке можно дать row stretch - Stretch row
+колонка получится на 100% ширины, а содержимое в container
+
+Так-же можно задать Stretch row and content, в таком случае содержимое
+тоже будет занимать 100% а container проигнорированный
+
+и Stretch row and content (no paddings)
+
+===================
