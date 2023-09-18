@@ -197,12 +197,47 @@ if (function_exists('vc_map')){
     "params" => array(
       array(
         "type" => "textfield",
-        "holder" => "div",
-        "class" => "",
-        "heading" => __( "Text", "my_slug" ),
-        "param_name" => "foo",
+        // "holder" => "div",
+        // "class" => "",
+        "heading" => __( "Name", "my_slug" ),
+        "param_name" => "name",
         "value" => __( "", "my_slug" ),
-        "description" => __( "Description for foo param.", "my_slug" )
+        "description" => __( "Name", "my_slug" )
+      ),
+      array(
+        "type" => "attach_image",
+        "heading" => __( "Photo", "my_slug" ),
+        "param_name" => "photo",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Upload a photo", "my_slug" )
+      ),
+      array(
+        "type" => "textarea_html",
+        "heading" => __( "Description", "my_slug" ),
+        "param_name" => "content", //!!!
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Upload a photo", "my_slug" )
+      ),
+      array(
+        "type" => "textfield",
+        "heading" => __( "Social Facebook", "my_slug" ),
+        "param_name" => "fb",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Facebook icon", "my_slug" )
+      ),
+      array(
+        "type" => "textfield",
+        "heading" => __( "Social Twitter", "my_slug" ),
+        "param_name" => "tw",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Twitter icon", "my_slug" )
+      ),
+      array(
+        "type" => "textfield",
+        "heading" => __( "Social Instagram", "my_slug" ),
+        "param_name" => "inst",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Instagram icon", "my_slug" )
       ),
     )
    ) );

@@ -8,6 +8,9 @@
 
 https://github.com/wpbakery/vc-dev-example/blob/master/test_vc_map.php
 
+документация
+https://kb.wpbakery.com/docs/inner-api/vc_map/
+
 ==========================
 вызвать свой js в php
 wp_enqueue_script('my_script');
@@ -17,3 +20,7 @@ wp_enqueue_script('my_script');
 'admin_enqueue_js' => array(get_template_directory_uri().'/vc_extend/bartag.js'),
 
 ==========================
+Available type values
+https://kb.wpbakery.com/docs/inner-api/vc_map/
+
+это все доступные поля

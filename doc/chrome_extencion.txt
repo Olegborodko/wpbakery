@@ -1,0 +1,2 @@
+Расширение chrome что-бы находить что используется на сайте
+WordPress Theme Detector and Plugin Detector
