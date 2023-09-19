@@ -24,29 +24,31 @@ Redux::set_section(
 				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
 				'label'    => true,
 				'options'  => array(
-					'Text One'   => 'Item 1',
-					'Text Two'   => 'Item 2',
-					'Text Three' => 'Item 3',
+					'Telegram'   => '',
+					'Youtube'   => '',
+					'Twitter' => '',
+          'Facebook' => '',
+          'Instagram' => '',
 				),
 			),
-			array(
-				'id'       => 'opt-check-sortable',
-				'type'     => 'sortable',
-				'mode'     => 'toggle', // toggle or text.
-				'title'    => esc_html__( 'Sortable Toggle Option', 'your-textdomain-here' ),
-				'subtitle' => esc_html__( 'Define and reorder these however you want.', 'your-textdomain-here' ),
-				'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
-				'options'  => array(
-					'cb1' => 'Option One',
-					'cb2' => 'Option Two',
-					'cb3' => 'Option Three',
-				),
-				'default'  => array(
-					'cb1' => false,
-					'cb2' => true,
-					'cb3' => false,
-				),
-			),
+			// array(
+			// 	'id'       => 'opt-check-sortable',
+			// 	'type'     => 'sortable',
+			// 	'mode'     => 'toggle', // toggle or text.
+			// 	'title'    => esc_html__( 'Sortable Toggle Option', 'your-textdomain-here' ),
+			// 	'subtitle' => esc_html__( 'Define and reorder these however you want.', 'your-textdomain-here' ),
+			// 	'desc'     => esc_html__( 'This is the description field, again good for additional info.', 'your-textdomain-here' ),
+			// 	'options'  => array(
+			// 		'cb1' => 'Option One',
+			// 		'cb2' => 'Option Two',
+			// 		'cb3' => 'Option Three',
+			// 	),
+			// 	'default'  => array(
+			// 		'cb1' => false,
+			// 		'cb2' => true,
+			// 		'cb3' => false,
+			// 	),
+			// ),
 		),
 	)
 );
