@@ -243,5 +243,52 @@ if (function_exists('vc_map')){
    ) );
 }
 
+// add another component wpBakery
+if (class_exists('WPBakeryShortCode')){
+  class WPBakeryShortCode_My_Widget2 extends WPBakeryShortCode {}
+}
 
+if (function_exists('vc_map')){
+  vc_map( array(
+    "name" => __( "My Widget2", "my_slug" ),
+    "base" => "my_widget2", // !!!
+    "class" => "",
+    "category" => __( "My Category", "my_slug"),
+    "description" => __("My description", "my_slug"),
+    'show_settings_on_create' => true,
+    'icon' => 'my_custom_class_for_icon',
+    // 'admin_enqueue_js' => array(get_template_directory_uri().'/vc_extend/bartag.js'),
+    // 'admin_enqueue_css' => array(get_template_directory_uri().'/vc_extend/bartag.css'),
+    "params" => array(
+      array(
+        "type" => "attach_image",
+        "heading" => __( "Photo", "my_slug" ),
+        "param_name" => "photo",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Upload a photo", "my_slug" )
+      ),
+      array(
+        "type" => "textfield",
+        "heading" => __( "Title", "my_slug" ),
+        "param_name" => "title",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Title", "my_slug" )
+      ),
+      array(
+        "type" => "textfield",
+        "heading" => __( "Quote", "my_slug" ),
+        "param_name" => "quote",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Quote", "my_slug" )
+      ),
+      array(
+        "type" => "textfield",
+        "heading" => __( "Author", "my_slug" ),
+        "param_name" => "author",
+        "value" => __( "", "my_slug" ),
+        "description" => __( "Author", "my_slug" )
+      ),
+    )
+   ) );
+}
 
